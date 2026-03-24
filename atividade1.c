@@ -47,3 +47,6 @@ A escolha do maior e menor é O(1), então não impacta significativamente. */
 
 /* Lembrete: O(n²) é pq compara varios pares repetidamente.
 O(n) é apenas percorrer o vetor. */
+
+// crescente
+// Ordenação O(n^2) É a parte lenta do código.
