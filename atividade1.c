@@ -45,11 +45,26 @@ int main() {
     int n1 = 9;
     int n2 = 14;
 
-    printf("=== Vetor 1 ===\n");
+    printf("--- Vetor 1 ---\n");
     testarVetor(vetor1, n1);
 
-    printf("\n=== Vetor 2 ===\n");
+    printf("\n---- Vetor 2 ---\n");
     testarVetor(vetor2, n2);
 
     return 0;
 }
+
+/* Mesmo adicionando a etapa de escolha (menor e maior), a complexidade
+continua sendo O(n²), pois a ordenação (Bubble Sort) é a parte que mais
+consome tempo no algoritmo.
+
+A escolha do menor e do maior elemento é O(1), já que basta acessar
+o primeiro e o último elemento do vetor ordenado, não impactando
+significativamente no custo total. */
+
+/* Lembrete:
+O(n²) ocorre porque o algoritmo de ordenação compara vários pares de
+elementos repetidamente (laços aninhados).
+
+O(n) seria apenas percorrer o vetor uma única vez, como em algoritmos
+lineares mais eficientes. */
